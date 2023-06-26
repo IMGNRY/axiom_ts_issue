@@ -3,18 +3,6 @@ import { onMounted } from 'vue'
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import { Axiom } from '@axiomhq/js'
-
-const axiom = new Axiom({
-  token: 'anything',
-  orgId: 'anything',
-  url: 'anything', // has to be the filled or crash on process.env
-})
-
-onMounted(() => {
-  axiom.ingest('anything', {
-    message: 'anything',
-  })
-})
 </script>
 
 <template>
